@@ -35,6 +35,9 @@ function renderLicenseLink(license) {
     • [Contact-Me](#contact-me)
     • [Contributors](#contributors)
     • [Testing](#testing)
+    •[Solution](#solution)
+    •[Screenshot](#screenshot)
+    • [Video Demo](#video-demo)
     $(renderLicenseLink)(data.license)}
     ## Description
     ${data.description}

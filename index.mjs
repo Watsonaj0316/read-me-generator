@@ -38,7 +38,7 @@ const questions = [
 {
     type: "input",
     name: "contributors",
-message: "Please list any contributors.(Use GitHub usernames)",
+message: "How to make contributions?",
 },
 {
     type: "input",
@@ -92,12 +92,24 @@ function generateMarkdown(data) {
         - [Contributing](#contributing)
         - [Tests](#tests)
         - [Contact-Me](#Contact-Me)
+        - [Solution](#solution)
+        - [Screenshot](#screenshot)
+        - [Video Demo](#video-demo)
         
         ## Installation
         ${require}
         
         ## Usage
         ${usage}
+
+        ## Solution
+         [Link:]
+
+         ## Screenshot
+         ![Image]
+
+         ## Video Demo
+         [Video Link:]
 
         ## Contact-Me
     • Name - ${data.name}
