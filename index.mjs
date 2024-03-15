@@ -55,11 +55,6 @@ message: "How to make contributions?",
     name: "email",
     message: "Please enter your email address:",
 },
-{
-    type: "input",
-    name: "screenshot",
-    message: "Please provide the URL of the first screenshot:"
-},
 ];
 
 // Function to write README file
@@ -75,7 +70,7 @@ async function writeToFile(fileName, data) {
 
 // Generate README content
 function generateMarkdown(data) {
-    const { title, description, license, require, usage, creator, name, email, contributors, test } = data;
+    const { title, description, license, installation, usage, creator, name, email, contributors, } = data;
   
     return `
         # ${title}
@@ -93,20 +88,16 @@ function generateMarkdown(data) {
         - [Contributing](#contributing)
         - [Contact-Me](#Contact-Me)
         - [Solution](#solution)
-        - [Screenshot](#screenshot)
         - [Video Demo](#video-demo)
         
         ## Installation
-        ${require}
+        ${installation}
         
         ## Usage
         ${usage}
 
         ## Solution
          [Link:]https://github.com/Watsonaj0316/read-me-generator
-
-         ## Screenshot
-         ![Screenshot 1](IMG_6484.jpg "Screenshot of READme file.")
 
          ## Video Demo
          [Video Link:]

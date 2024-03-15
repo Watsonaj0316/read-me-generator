@@ -24,24 +24,6 @@ function renderLicenseLink(license) {
  }
  
 
-// generateMarkdown.js screenshot
-
-function generateMarkdown(data) {
-    const { title, description, screenshot } = data;
-
-    let markdown = `# ${title}\n\n`;
-    markdown += `## Description\n${description}\n\n`;
-    markdown += `## Screenshot\n`;
-    if (screenshot) {
-        markdown += `![Screenshot](${screenshot})\n\n`;
-    }
-
-    return markdown;
-}
-
-export { generateMarkdown };
-
-
  //Creating a function to generate markdown for README 
  function generateMarkdown(data) { 
    return `# ${data.title} 
@@ -55,7 +37,6 @@ export { generateMarkdown };
     • [Contributors](#contributors)
     • [Testing](#testing)
     •[Solution](#solution)
-    •[Screenshot](#screenshot)
     • [Video Demo](#video-demo)
     $(renderLicenseLink)(data.license)}
     ## Description
