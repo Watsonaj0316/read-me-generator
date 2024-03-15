@@ -1,0 +1,23 @@
+{
+  "name": "read-me-generator",
+  "version": "1.0.0",
+  "description": "Description of your package",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Watsonaj0316/read-me-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Watsonaj0316/read-me-generator"
+  },
+  "homepage": "https://github.com/Watsonaj0316",
+  "dependencies": {
+    "inquirer": "^8.2.6"
+  },
+  "keywords": []
+}
