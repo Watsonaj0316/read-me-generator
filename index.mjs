@@ -21,8 +21,8 @@ const questions = [
     },
     {
     type: "input",
-    name: "require",
-    message: "List any dependencies here.",
+    name: "installation",
+    message: "Steps to install.",
 },
 {
     type: "input",
@@ -30,7 +30,7 @@ const questions = [
     message: "Please provide usage information for your project:",
 },
 {
-    type: "",
+    type: "list",
     name: "license",
     message: "Please select a license for your project:",
     choices: ["MIT", "Apache-2.0", "GPL-3.0", "BSD-2-Clause", "ISC", "None"],
@@ -39,11 +39,6 @@ const questions = [
     type: "input",
     name: "contributors",
 message: "How to make contributions?",
-},
-{
-    type: "input",
-    name: "tests",
-    message: "Please provide test instructions for your project:",
 },
 {
     type: "input",
@@ -60,6 +55,11 @@ message: "How to make contributions?",
     name: "email",
     message: "Please enter your email address:",
 },
+{
+    type: "input",
+    name: "screenshot",
+    message: "Please provide the URL of the first screenshot:"
+},
 ];
 
 // Function to write README file
@@ -71,6 +71,7 @@ async function writeToFile(fileName, data) {
         console.error("Error writing to file:", error);
     }
 }
+
 
 // Generate README content
 function generateMarkdown(data) {
@@ -90,7 +91,6 @@ function generateMarkdown(data) {
         - [Usage](#usage)
         - [License](#license)
         - [Contributing](#contributing)
-        - [Tests](#tests)
         - [Contact-Me](#Contact-Me)
         - [Solution](#solution)
         - [Screenshot](#screenshot)
@@ -103,10 +103,10 @@ function generateMarkdown(data) {
         ${usage}
 
         ## Solution
-         [Link:]
+         [Link:]https://github.com/Watsonaj0316/read-me-generator
 
          ## Screenshot
-         ![Image]
+         ![Screenshot 1](IMG_6484.jpg "Screenshot of READme file.")
 
          ## Video Demo
          [Video Link:]
@@ -122,8 +122,6 @@ function generateMarkdown(data) {
         ## Contributing
         ${contributors}
         
-        ## Tests
-        ${test}
     `;
 }
 
