@@ -5,7 +5,7 @@
         Alyece Watson
         
         ## Description
-        This ReadMe generator was created using Node.mjs and Inquirer. It takes the user's input by automatically generating proffesional ReadMe's.The user must provide fundamental README information in order to proceed to the next question in sequence.Presented with the npm inquirer questions through sequential order within the directory the user must provide essential README information in order to get to the next question in sequence.Once the user completes a file name (Generated)README.md will be made.Regarding future use, you may alter the prompted questions within the index.mjs and generatedarkdown.js to suit your needs.
+         This ReadMe generator was created using Nodemjs and Inquirer. It takes the user's input by automatically generating proffesional ReadMe's.The user must provide fundamental README information in order to proceed to the next question in sequence.Presented with the npm inquirer questions through sequential order within the directory the user must provide essential README information inin order to get to the next question in sequence.Once the user completes a file name (Generated)README.nd will be made.Rename the (Generated)README.md file to the file name of your choice.Regarding future use, you may alter the prompted questions within the index. mjs and generatedarkdown.js to suit your needs.
         
         ## Table of Contents
         - [Installation](#installation)
@@ -37,6 +37,6 @@
         This project is licensed under the ISC license.
         
         ## Contributing
-        To make contributions, Fork the project, Create a topic branch from master, Make some commits to improve the project, Push this branch to your GitHub project, Open a Pull Request on GitHub, Discuss, and optionally continue committing, The project owner merges or closes the Pull Request, Sync the updated master back to your fork.
+         To make contributions, Fork the project, Create a topic branch from master, Make some commits to improve the project, Push this branch to your GitHub project, Open a Pull Request on GitHub, Discuss, and optionally continue committing, The project owner merges or closes the Pull Request, Sync the updated master back to your fork.
         
     
