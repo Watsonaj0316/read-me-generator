@@ -100,7 +100,7 @@ function generateMarkdown(data) {
          [Link:]https://github.com/Watsonaj0316/read-me-generator
 
          ## Video Demo
-         [Video Link:]
+         [Video Link:]https://app.screencastify.com/v2/manage/videos/rZ2xJJSok3WBRztfRUh3
 
         ## Contact-Me
     • Name - ${data.name}
