@@ -55,7 +55,21 @@ message: "How to make contributions?",
     name: "email",
     message: "Please enter your email address:",
 },
+{
+    type: "input",
+    name: "test",
+    message: "Testing:",
+},
 ];
+
+const test = 'npm test'; // Define the value for the test variable
+
+const readmeContent = `
+## Testing
+${test}
+`;
+
+console.log(readmeContent); // Output the generated Markdown content
 
 // Function to write README file
 async function writeToFile(fileName, data) {
@@ -66,7 +80,6 @@ async function writeToFile(fileName, data) {
         console.error("Error writing to file:", error);
     }
 }
-
 
 // Generate README content
 function generateMarkdown(data) {
@@ -89,7 +102,8 @@ function generateMarkdown(data) {
         - [Contact-Me](#Contact-Me)
         - [Solution](#solution)
         - [Video Demo](#video-demo)
-        
+        - [Testing](#tests)
+
         ## Installation
         ${installation}
         
@@ -109,10 +123,14 @@ function generateMarkdown(data) {
         
         ## License
         This project is licensed under the ${license} license.
+        [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+
         
         ## Contributing
         ${contributors}
         
+        ## Testing
+        ${test}
     `;
 }
 
